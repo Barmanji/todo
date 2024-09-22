@@ -1,0 +1,47 @@
+input[type="checkbox"] {
+  accent-color: #10B981; 
+}
+.neon-text {
+  text-shadow: 0 0 5px #fff, 0 0 8px #ff66ff, 0 0 12px #ff66ff, 0 0 15px #00ffff, 0 0 20px #00ffff;
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, #172842, #121e40);
+}
+
+.hue-rotate-animation {
+  animation: hue-rotate 15s infinite linear;
+}
+
+@keyframes hue-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.icon-button {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2); 
+  color: white; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.icon-button:hover {
+  background-color: rgba(255, 255, 255, 0.5); 
+  color: #ff66ff;
+}
+
+.icon-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
